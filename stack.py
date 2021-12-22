@@ -22,6 +22,9 @@ class Stack:
         else:
             return False
         
-    def top(self):
-        return self.top[len(self.top)-1]
+    def top_(self):
+        if self.isEmpty():
+            return -1
+        else:
+            return self.top[len(self.top)-1]
     
