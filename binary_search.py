@@ -1,6 +1,5 @@
 def binary_search(arr, value, low, high):
     # low = 0, high = len(arr)-1
-    print(arr, value, low, high)
     if low > high:
         return -1
     
