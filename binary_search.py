@@ -1,5 +1,6 @@
-def binary_search(arr, value, low=None, high=None):
-    low, high = low or 0, high or len(arr) -1
+def binary_search(arr, value, low, high):
+    # low = 0, high = len(arr)-1
+    print(arr, value, low, high)
     if low > high:
         return -1
     
@@ -12,5 +13,4 @@ def binary_search(arr, value, low=None, high=None):
     
     elif arr[mid] == value:
         return mid
-    
     
