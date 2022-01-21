@@ -1,3 +1,5 @@
+import math
+
 def eratosthenes(n):
   prime = [True]*(n+1)
   for i in range(2, math.floor(n ** 0.5)+1):
