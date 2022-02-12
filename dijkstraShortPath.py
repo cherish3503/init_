@@ -9,7 +9,7 @@ n,m = map(int, sys.stdin.readline().split())
 # n = 노드의 수, m = 간선의 수
 start = int(input())
 graph =  [[] for _ in range(n+1)]
-distance = INF*(n+1)
+distance = [INF]*(n+1)
 
 for _ in range(m):
   a,b,c = map(int, sys.stdin.readline().split())
